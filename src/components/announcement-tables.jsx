@@ -19,7 +19,7 @@ const ItemLink = ({ item }) => {
     );
 };
 
-// sections: [{ heading, columns: [{ year, items }] }] shows a table, [{ heading, items }] shows a list
+// sections: [{ heading?, columns: [{ year, items }] }] shows a table, [{ heading, items }] shows a list
 // items: [{ label, fileId }] where fileId is the Google Drive file ID; an item without one shows as plain text
 const AnnouncementTables = ({ title, sections = [] }) => {
     return (
@@ -32,11 +32,13 @@ const AnnouncementTables = ({ title, sections = [] }) => {
 
             <Section>
                 <div className="max-w-6xl mx-auto space-y-12">
-                    {sections.map((section) => (
-                        <div key={section.heading}>
-                            <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
-                                {section.heading}
-                            </h2>
+                    {sections.map((section, index) => (
+                        <div key={section.heading ?? index}>
+                            {section.heading && (
+                                <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4">
+                                    {section.heading}
+                                </h2>
+                            )}
 
                             {section.columns ? (
                                 <div className="overflow-x-auto">

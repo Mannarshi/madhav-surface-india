@@ -58,31 +58,6 @@ const documents = [
         title: "Terms and Conditions of Appointment of Independent Directors",
         fileId: "1rhMV5gowMeUv6hwO4EdYtUcOw5Yr-tiI",
     },
-    {
-        title: "Code of Internal Procedures and Conduct - Insider Trading",
-        description: "Earlier version",
-        fileId: "16AJyBsReoxIzVfiKXw2AzIs0kDwGZlnM",
-    },
-    {
-        title: "Policy on Related Party Transactions",
-        description: "Earlier version",
-        fileId: "19rZalY82p47f6fgOSunrHKPx69prx1m8",
-    },
-    {
-        title: "Policy on Vigil Mechanism",
-        description: "Earlier version",
-        fileId: "1EtbSWOFgsmSvwgjyLqGyzc4Z-MzLdwCO",
-    },
-    {
-        title: "Archival Policy",
-        description: "Earlier version",
-        fileId: "1YcINwEz2jBVDqYas6FnOXdy899dMtcEz",
-    },
-    {
-        title: "Familiarization Programme of Independent Directors",
-        description: "Earlier version",
-        fileId: "1dqWRrhRu1iHMnoiLmCn3FOE4AZM_zNZP",
-    },
 ];
 
 const CodeOfConductAndPolicies = () => {

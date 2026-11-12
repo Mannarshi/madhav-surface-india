@@ -122,39 +122,6 @@ const reportGroups = [
             },
         ],
     },
-    {
-        heading: "Earlier Reports",
-        reports: [
-            {
-                period: "December 2017",
-                fileId: "1zBRZjHkyhcLftebl8U3wZVw6AZ7iNY60",
-            },
-            {
-                period: "September 2017",
-                fileId: "1SGtIDx40KYmlIRCacvhsgtc-irSEO6lq",
-            },
-            {
-                period: "June 30, 2017",
-                fileId: "1I8vz-Rfy6iYXQ8TjVGtqGh20pHoIWsQy",
-            },
-            {
-                period: "2016-2017",
-                fileId: "1FVypa5-0ILgy7HTo0hraA29Lgu-SRWNx",
-            },
-            {
-                period: "March 31, 2016",
-                fileId: "1djdMf7bbu_asNSrK5OSMMrD6THF_NNdw",
-            },
-            {
-                period: "December 2015",
-                fileId: "1J6RwfXuap7FzXZt55OOp9c4kVJc3ytxc",
-            },
-            {
-                period: "March 31, 2013 to September 30, 2015",
-                fileId: "1l5okYLZYMe3mEytGXPhmo06pdZuaIe44",
-            },
-        ],
-    },
 ];
 
 const CorporateGovernanceReport = () => {

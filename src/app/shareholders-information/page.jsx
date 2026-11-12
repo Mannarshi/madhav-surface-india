@@ -108,12 +108,8 @@ const sections = [
         ],
     },
     {
-        heading: "Other Information",
         items: [
-            { label: "Shareholding Pattern - Quarter ended December 31, 2017", fileId: "1jQkmOuI5AAGZ9HFDqiuRQxtpGrUd3HeS" },
-            { label: "Shareholding Pattern", fileId: "1OYxbi203HvsfXitS5K8m0UXc9yBCB93M" },
-            { label: "Shares Transferred to IEPF", fileId: "1xOit_0zAUQrWF68qdZqGmdc1GVOV_gn3" },
-            { label: "Contact Us for Investor Relations", fileId: "1djP-zDk7_90pvv9grNbAyf9rbbdIM5ep" },
+            { label: "Contact Us for Investor Relations", fileId: "1VLvlrMyIBJ1Un53vFS20FTnb4t5ucEko" },
         ],
     },
 ];

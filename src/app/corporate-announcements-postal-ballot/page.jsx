@@ -3,6 +3,23 @@ import InvestorDocuments from '@/components/investor-documents';
 
 const folders = [
     {
+        name: "2026-2027",
+        documents: [
+            {
+                title: "EGM Notice - 06.07.2026",
+                fileId: "1JZjI56LxZ20b9kEHKRPnKuRMxPBDashw",
+            },
+            {
+                title: "EGM Outcome - 06.07.2026",
+                fileId: "1Qv2xcjHjMnc56pSoHs7ayCsYS33Mq7rn",
+            },
+            {
+                title: "Scrutinizer Report - 06.07.2026",
+                fileId: "1wE_BJ9tsSHp7KAUzwfmQI8pIw_aqJaZG",
+            },
+        ],
+    },
+    {
         name: "2025-2026",
         documents: [
             {
