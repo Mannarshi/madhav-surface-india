@@ -1,0 +1,147 @@
+
+.reg46-page {
+  width: 100%;
+  padding: 45px 20px 60px;
+  background: #ffffff;
+  color: #222222;
+}
+
+.reg46-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reg46-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.reg46-header h1 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 12px;
+  color: #222222;
+}
+
+.reg46-header h2 {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  color: #333333;
+}
+
+.reg46-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.reg46-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 15px;
+  line-height: 1.55;
+  background: #ffffff;
+}
+
+.reg46-table th,
+.reg46-table td {
+  border: 1px solid #777777;
+  padding: 11px 12px;
+  text-align: left;
+  vertical-align: middle;
+  overflow-wrap: anywhere;
+}
+
+.reg46-table thead th {
+  background: #f2f2f2;
+  color: #222222;
+  font-weight: 700;
+}
+
+.reg46-table .serial-column {
+  width: 9%;
+}
+
+.reg46-table .particulars-column {
+  width: 46%;
+}
+
+.reg46-table .weblink-column {
+  width: 45%;
+}
+
+.reg46-table .serial-cell {
+  text-align: center;
+  font-weight: 500;
+}
+
+.reg46-table .particulars-cell {
+  color: #333333;
+}
+
+.reg46-table .weblink-cell {
+  color: #333333;
+}
+
+.reg46-table .weblink-cell a {
+  color: #0056a6;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.reg46-table .weblink-cell a:hover {
+  color: #003366;
+}
+
+.reg46-table tbody tr:hover {
+  background: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .reg46-page {
+    padding: 30px 12px 40px;
+  }
+
+  .reg46-header h1 {
+    font-size: 20px;
+  }
+
+  .reg46-header h2 {
+    font-size: 15px;
+  }
+
+  .reg46-table {
+    min-width: 700px;
+    font-size: 14px;
+  }
+
+  .reg46-table th,
+  .reg46-table td {
+    padding: 10px;
+  }
+}
+
+@media print {
+  .reg46-page {
+    padding: 10px;
+  }
+
+  .reg46-table {
+    font-size: 11px;
+  }
+
+  .reg46-table th,
+  .reg46-table td {
+    padding: 6px;
+  }
+
+  .reg46-table a {
+    color: #0056a6;
+  }
+}
