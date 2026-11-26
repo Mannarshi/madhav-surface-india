@@ -1,5 +1,5 @@
 import React from 'react';
-import InvestorDocuments from '@/components/investor-documents';
+// import InvestorDocuments from '@/components/investor-documents';
 
 
 import type { Metadata } from "next";
