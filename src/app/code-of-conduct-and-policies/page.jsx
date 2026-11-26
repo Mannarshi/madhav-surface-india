@@ -58,6 +58,14 @@ const documents = [
         title: "Terms and Conditions of Appointment of Independent Directors",
         fileId: "1rhMV5gowMeUv6hwO4EdYtUcOw5Yr-tiI",
     },
+     {
+        title: "Criteria for making Payment to Non - Executive Directors",
+        fileId: "1R5SJTPddJRyYhA7ov8OVdcs32nNYQMU3",
+    },
+     {
+        title: "Contact Details for KMP",
+        fileId: "1Uc-1zFxQ-pkfPjgtPJB5i-6aen6Qq_re",
+    },
 ];
 
 const CodeOfConductAndPolicies = () => {
