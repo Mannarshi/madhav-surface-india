@@ -1,11 +1,9 @@
 import React from 'react';
 // import InvestorDocuments from '@/components/investor-documents';
-
-
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import "./regulation-46.css";
 
-export const metadata: Metadata = {
+export const metadata= {
   title: "Regulation 46 Disclosures | Madhav Marbles and Granites Limited",
   description:
     "Access statutory disclosures under Regulation 46 of SEBI LODR Regulations 2015, including company information, board policies, financial results and shareholder information.",
@@ -231,5 +229,3 @@ const Regulation4662 = () => {
         />
     );
 };
-
-export default Regulation4662;

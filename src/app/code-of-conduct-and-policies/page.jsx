@@ -60,11 +60,11 @@ const documents = [
     },
      {
         title: "Criteria for making Payment to Non - Executive Directors",
-        fileId: "1R5SJTPddJRyYhA7ov8OVdcs32nNYQMU3",
+        fileId: "1y5-NsWAfCsBBlXHk2tWKka_38UVkpIsz",
     },
      {
         title: "Contact Details for KMP",
-        fileId: "1Uc-1zFxQ-pkfPjgtPJB5i-6aen6Qq_re",
+        fileId: "1pj6j4J0hRo05Eyzex8QL_BsicBuOERhZ",
     },
 ];
 
