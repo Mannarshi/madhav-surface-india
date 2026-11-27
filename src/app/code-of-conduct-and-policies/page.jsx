@@ -65,7 +65,7 @@ const documents = [
      {
         title: "Contact Details for KMP",
         fileId: "1pj6j4J0hRo05Eyzex8QL_BsicBuOERhZ",
-    },
+    }
 ];
 
 const CodeOfConductAndPolicies = () => {
