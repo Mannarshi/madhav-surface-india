@@ -35,6 +35,7 @@ const readLeadFlag = () => {
 
 const BrochureDownload = () => {
     const [mounted, setMounted] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [submitted, setSubmitted] = useState(false);
     const [submitting, setSubmitting] = useState(false);
@@ -43,6 +44,15 @@ const BrochureDownload = () => {
     useEffect(() => {
         setMounted(true);
         setSubmitted(readLeadFlag());
+
+        // Show the button after scrolling 200px, like the other floating buttons
+        const handleScroll = () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            setIsVisible(scrollTop > 200);
+        };
+        handleScroll();
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     useEffect(() => {
@@ -103,19 +113,26 @@ const BrochureDownload = () => {
 
     return (
         <>
-            <motion.button
-                whileTap={{ scale: 0.95 }}
-                whileHover={{ scale: 1.05 }}
-                onClick={() => setIsOpen(true)}
-                className="fixed bottom-16 md:bottom-12 left-5 z-50 bg-primary text-primary-foreground p-3 sm:px-5 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center gap-2 cursor-pointer"
-                aria-label="Download Brochure"
-                initial={{ opacity: 0, scale: 0.8, y: 20 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ duration: 0.3, ease: 'easeInOut' }}
-            >
-                <FileDown className="w-7 h-7 sm:w-6 sm:h-6" />
-                <span className="hidden sm:inline font-semibold">Download Brochure</span>
-            </motion.button>
+            <div className="fixed bottom-14 md:bottom-10 left-5 z-50">
+                <AnimatePresence>
+                    {isVisible && (
+                        <motion.button
+                            whileTap={{ scale: 0.9 }}
+                            whileHover={{ scale: 1.1 }}
+                            onClick={() => setIsOpen(true)}
+                            className="bg-primary text-primary-foreground p-3 sm:px-5 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 flex items-center gap-2 cursor-pointer"
+                            aria-label="Download Brochure"
+                            initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                            animate={{ opacity: 1, scale: 1, y: -10 }}
+                            exit={{ opacity: 0, scale: 0.8, y: 20 }}
+                            transition={{ duration: 0.3, ease: 'easeInOut' }}
+                        >
+                            <FileDown className="w-7 h-7 sm:w-6 sm:h-6" />
+                            <span className="hidden sm:inline font-semibold">Download Brochure</span>
+                        </motion.button>
+                    )}
+                </AnimatePresence>
+            </div>
 
             <AnimatePresence>
                 {isOpen && (
