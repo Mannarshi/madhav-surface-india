@@ -17,6 +17,7 @@ import { generateMetadata as generateSEOMetadata, pageMetadata } from "@/lib/seo
 import VideoSection from "@/components/home-new/VideoSection";
 import SpecialProductSection from "@/components/home-new/SpecialProductSection";
 import CtaSection from "@/components/page/CtaSection";
+import BrochureDownload from "@/components/brochure-download";
 
 export const metadata = generateSEOMetadata({
   title: pageMetadata.home.title,
@@ -45,6 +46,7 @@ export default function Home() {
       <ContactSection />
       {/* <BlogSection /> */}
       {/* <CtaSection/> */}
+      <BrochureDownload />
     </main>
   );
 }
